@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TestePI</string>
+    <string name="profile_name">Alexandre Rodrigues</string>
+    <string name="btn_buscar">Botão de pesquisa</string>
+    <string name="profile_image">Foto de perfil</string>
+    <string name="postar">Postar</string>
+    <string name="btn_postarIMG">Botão de adicionar imagem</string>
+    <string name="image_send">Foto escolhida</string>
+    <string name="lbl_legenda">Digite um texto</string>
+    <string name="textTema">Tema</string>
+</resources>

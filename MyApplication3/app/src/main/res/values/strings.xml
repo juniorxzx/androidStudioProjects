@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Rolar dados</string>
+    <string name="d6">D6</string>
+    <string name="d12">D12</string>
+    <string name="rolagem_de_dados">ROLAGEM DE DADOS</string>
+    <string name="d20">D20</string>
+    <string name="subtiltle">Clique em um dos botões a baixo para rodar um dado.</string>
+    <string name="dado_de_6_lados">Dado: 6 lados</string>
+    <string name="dado_de_12_lados">Dado: 12 lados</string>
+    <string name="dado_de_20_lados">Dado: 20 lados</string>
+    <string name="todo">TODO</string>
+    <string name="exit">Sair</string>
+</resources>
