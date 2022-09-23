@@ -46,38 +46,41 @@ class MainActivity : AppCompatActivity() {
 
     private fun rolardados(lados: Int) {
 
+        val rolagem = (1..lados).random()
+
+        val textDado = findViewById<TextView>(id.textDado)
+
+        val imageDado = findViewById<ImageView>(id.imageDado)
+
+        textDado.text = rolagem.toString()
 
         when(lados){
             6 -> {
-                val rolagem = (1..6).random()
-
-                val textDado = findViewById<TextView>(id.textDado)
-
-//                val imageDado = findViewById<ImageView>(id.imageDado)
-                textDado.text = rolagem.toString()
-
-//                when(rolagem){
-//                    1 -> imageDado.setImageDrawable(R.drawable)
-//
-//                }
+                when(rolagem){
+                    1 -> imageDado.setImageResource(R.drawable.dice_1)
+                    2 -> imageDado.setImageResource(R.drawable.dice_2)
+                    3 -> imageDado.setImageResource(R.drawable.dice_3)
+                    4 -> imageDado.setImageResource(R.drawable.dice_4)
+                    5 -> imageDado.setImageResource(R.drawable.dice_5)
+                    6 -> imageDado.setImageResource(R.drawable.dice_6)
+                }
             }
             12 -> {
-                val rolagem = (1..12).random()
-
-                val textDado = findViewById<TextView>(id.textDado)
-
-                textDado.text = rolagem.toString()
+                when(rolagem){
+                    1 -> imageDado.setImageResource(R.drawable.dice_1)
+                    2 -> imageDado.setImageResource(R.drawable.dice_2)
+                    3 -> imageDado.setImageResource(R.drawable.dice_3)
+                    4 -> imageDado.setImageResource(R.drawable.dice_4)
+                    5 -> imageDado.setImageResource(R.drawable.dice_5)
+                    6 -> imageDado.setImageResource(R.drawable.dice_6)
+                    else -> {
+                        imageDado.setImageResource(R.drawable.ic_square)
+                    }
+                }
             }
             20 -> {
-                val rolagem = (1..20).random()
 
-                val textDado = findViewById<TextView>(id.textDado)
-
-                textDado.text = rolagem.toString()
             }
         }
-
     }
-
-
 }
