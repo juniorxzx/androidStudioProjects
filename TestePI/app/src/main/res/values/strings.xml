@@ -8,4 +8,8 @@
     <string name="image_send">Foto escolhida</string>
     <string name="lbl_legenda">Digite um texto</string>
     <string name="textTema">Tema</string>
+    <string name="search">Search</string>
+    <string name="config">Configuração</string>
+    <string name="foto">postagemFoto</string>
+
 </resources>

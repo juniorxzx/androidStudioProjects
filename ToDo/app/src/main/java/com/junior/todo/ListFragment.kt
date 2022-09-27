@@ -6,44 +6,64 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.junior.todo.adapter.TarefaAdapter
+import com.junior.todo.databinding.FragmentListBinding
+import com.junior.todo.model.Tarefa
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [ListFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class ListFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
-
+    private lateinit var binding: FragmentListBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_list, container, false)
+        binding = FragmentListBinding.inflate(layoutInflater, container, false)
 
-        val floatingAdd = view.findViewById<FloatingActionButton>(R.id.floatingAdd)
 
-        floatingAdd.setOnClickListener{
+        val listTarefas = listOf(
+            Tarefa(
+                "Lavar a louça",
+                "Lavar a louça do dia todo",
+                "Junior",
+                "2022-09-27",
+                true,
+                "Dia a dia"
+
+            ),
+            Tarefa(
+                "Lavar a louça",
+                "Lavar a louça do dia todo",
+                "Junior",
+                "2022-09-27",
+                true,
+                "Dia a dia"
+
+            ),
+            Tarefa(
+                "Lavar a louça",
+                "Lavar a louça do dia todo",
+                "Junior",
+                "2022-09-27",
+                true,
+                "Dia a dia"
+
+            )
+        )
+
+        //Configuração do recycleView
+        val adapter = TarefaAdapter()
+        binding.recyclerTarefa.layoutManager = LinearLayoutManager(context)
+        binding.recyclerTarefa.adapter = adapter
+        binding.recyclerTarefa.setHasFixedSize(true)
+
+        adapter.setList(listTarefas)
+
+        // ----------------- //
+        binding.floatingAdd.setOnClickListener{
             findNavController().navigate(R.id.action_listFragment_to_formFragment)
         }
-        return view
+        return binding.root
     }
-
-
 }

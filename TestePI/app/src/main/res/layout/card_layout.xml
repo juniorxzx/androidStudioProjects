@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:visibility="visible"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/viewProfileInform"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/viewProfileInform"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/viewProfileInform"
+            tools:text="Nome do usuario" />
+
+        <TextView
+            android:id="@+id/textDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@+id/viewProfileInform"
+            tools:layout_editor_absoluteX="109dp"
+            tools:text="Descrição" />
+
+        <TextView
+            android:id="@+id/textImage"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_margin="10dp"
+            android:padding="50dp"
+            android:textSize="60sp"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@+id/textDescricao"
+            tools:layout_editor_absoluteX="0dp"
+            tools:text="IMAGEM" />
+
+        <TextView
+            android:id="@+id/textData"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/viewProfileInform"
+            app:layout_constraintEnd_toStartOf="@+id/imageView3"
+            app:layout_constraintStart_toStartOf="@+id/viewProfileInform"
+            app:layout_constraintTop_toTopOf="@+id/viewProfileInform"
+            tools:text="Data" />
+
+        <TextView
+            android:id="@+id/textTema"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@+id/textImage"
+            tools:layout_editor_absoluteX="57dp"
+            tools:text="Tema" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/profile_image"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/textNome"
+            app:layout_constraintEnd_toStartOf="@+id/textNome"
+            app:layout_constraintTop_toTopOf="@+id/textNome"
+            app:srcCompat="@drawable/profileimg" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="919dp"
+            android:contentDescription="@string/foto"
+            android:scaleType="centerCrop"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/textImage"
+            app:layout_constraintEnd_toEndOf="@+id/textImage"
+            app:layout_constraintStart_toStartOf="@+id/textImage"
+            app:layout_constraintTop_toBottomOf="@+id/textDescricao"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/fototeste"
+            tools:ignore="ImageContrastCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
