@@ -11,5 +11,17 @@
     <string name="search">Search</string>
     <string name="config">Configuração</string>
     <string name="foto">postagemFoto</string>
+    <string name="btnvoltar">btnVoltar</string>
+    <string name="DataPost">Postado em:</string>
+
+
+<!-- Start Fragment -->
+    <string name="start_action_bar_title">Home</string>
+    <string name="btnPostagem">Botão postagem</string>
+
+<!-- Profile Fragment -->
+    <string name="profile_action_bar_title">Postagem</string>
+    <string name="linkImg">Insira o link da sua imagem.</string>
+
 
 </resources>

@@ -5,7 +5,7 @@ import android.os.Bundle
 import dagger.hilt.android.AndroidEntryPoint
 
 
-//A partir disso, pega todos os container para conseguir injetar as instancias em todos os fragments
+//A partir disso, pega todos os fragments para conseguir injetar as instancias.
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

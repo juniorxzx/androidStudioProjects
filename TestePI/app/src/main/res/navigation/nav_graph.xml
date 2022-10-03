@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/formFragment"
         android:name="com.junior.testepi.FormFragment"
-        android:label="fragment_form"
+        android:label="@string/profile_action_bar_title"
         tools:layout="@layout/fragment_form">
         <action
             android:id="@+id/action_formFragment_to_listFragment"
@@ -19,7 +19,7 @@
     <fragment
         android:id="@+id/listFragment"
         android:name="com.junior.testepi.ListFragment"
-        android:label="fragment_list"
+        android:label="@string/start_action_bar_title"
         tools:layout="@layout/fragment_list" >
         <action
             android:id="@+id/action_listFragment_to_formFragment"

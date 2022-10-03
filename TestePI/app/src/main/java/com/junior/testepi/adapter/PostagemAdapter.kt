@@ -28,8 +28,8 @@ class PostagemAdapter: RecyclerView.Adapter<PostagemAdapter.PostagemViewHolder>(
         holder.binding.textNome.text = postagem.nome
         holder.binding.textImage.text = postagem.image
         holder.binding.textDescricao.text = postagem.descricao
-        holder.binding.textData.text = postagem.data
-        holder.binding.textTema.text = postagem.tema
+//        holder.binding.textData.text = postagem.data
+//        holder.binding.textTema.text = postagem.tema.tema
     }
 
     override fun getItemCount(): Int {
